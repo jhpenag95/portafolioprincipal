@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Estilos/Style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <title>Portafolio</title>
+</head>
+
+<body>
+  <nav class="menu">
+    <label class="logo">PORTAFOLIO</label>
+    <ul class="menu_items">
+      <li class="active"><a href="#home">HOME</a></li>
+      <li><a href="#sobremi">SOBRE-MI</a></li>
+      <li><a href="#port">PORTAFOLIO</a></li>
+      <li><a href="#tecnologia">TECNOLOGÍAS</a></li>
+      <li><a href="#cont">CONTACTO</a></li>
+    </ul>
+    <span class="btn_menu">
+      <i class="fas fa-bars"><img src="./img/Icons/Menu_principal.png" alt="" width="30px" height="40px"></i>
+    </span>
+  </nav>
+
+  <header id="home">
+    <img src="./img/fon3.jpg" alt="" class="imgfond">
+    <div class="home-image">
+      <img src="./img/fondo-print2.jpg" alt="">
+    </div>
+    <div class="home-inicio">
+      <h1>Helver Johan Peña Gordillo</h1>
+      <p>Desarrollador <span>WEB</span> - Front-End</p>
+    </div>
+
+  </header>
+  <main>
+    <section id="sobremi">
+      <div class="container">
+        <div class="container-parrafo">
+          <h2>SOBRE MI</h2>
+          <p>
+            Joven con actitudes proactivas, me guasta estudiar y aprender lo relacionado con el desarrollo web.
+            Persona amable y dispuesta al mejoramiento continuo. Me gusta trabajar en equipo y compartir mi
+            conocimiento con las demás personas. En el futuro, me veo como un excelente profesional en el campo del
+            desarrollo web. También, deseo darle un buen futuro a mi familia.
+          </p>
+        </div>
+        <div class="sobremi-cv">
+          <a href="./pdf/CV Helver Johan Peña Gordillo.pdf" download="CV-Helver Johan Peña Goridllo"><button class="btn">Descargar
+              CV</button></a>
+          <a href="#certificado" onclick="mostrarcertf()"><button class="btn">Certificados</button></a>
+        </div>
+        <div class="container_subpagina" id="certificado" onclick="ocultarcef()">
+          <div class="pagina1_sub-certificados">
+            <div class="content_cerrar">
+              <div class="cerrar">
+                <button>X</button>
+              </div>
+            </div>
+            <div class="certificado-texto-contenedor">
+              <h3>Certificados</h3>
+            </div>
+            <div class="certificado-contenedor">
+              <div class="container-image">
+                <img src="./img/certificados/básico javascript.jpg" alt="Certificado básico javascript">
+                <h4>Certificado JavaScript Básico</h4>
+                <a href="pdf/Diploma_básico_javascript.pdf" download="Certificado básico javascript">Descarga PDF</a>
+              </div>
+              <div class="container-image">
+                <img src="./img/certificados/Javascript Practico.jpg" alt="Certificado Javascript Practico">
+                <h4>Certificado JavaScript Práctico</h4>
+                <a href="pdf/Diploma_Javascript_Practico.pdf" download="Certificado Javascript Practico">Descarga PDF</a>
+              </div>
+              <div class="container-image">
+                <img src="./img/certificados/html css.jpg" alt="Certificado html css">
+                <h4>Certificado HTML y CSS</h4>
+                <a href="pdf/Diploma_html_css.pdf" download="Certificado html css">Descarga PDF</a>
+              </div>
+              <div class="container-image">
+                <img src="./img/certificados/Css Practico.jpg" alt="Certificado practico css">
+                <h4>Certificado CSS Práctico</h4>
+                <a href="pdf/Diploma_practico_css.pdf" download="Certificado practico css">Descarga PDF</a>
+              </div>
+              <div class="container-image">
+                <img src="./img/certificados/prework windows.jpg" alt="Certificado prework windows">
+                <h4>Certificado Prework</h4>
+                <a href="pdf/Diploma_prework_windows.pdf" download="Certificado prework windows">Descarga PDF</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="portafolio" id="port">
+      <div class="portafolio-tittle">
+        <h2>PORTAFOLIO</h2>
+      </div>
+
+      <!--Batatabit-->
+      <div class="poyect-container">
+        <div class="grid-item">
+          <figure>
+            <img src="./img/Bitcoin.svg" alt="">
+            <div class="capa" onclick="mostrar1()">
+              <i><a href="#batata"><img src="./img/Icons/mas3.png" alt=""></a></i>
+            </div>
+          </figure>
+          <div class="portafolio-text">
+            <h3>Batatabit</h3>
+          </div>
+        </div>
+        <div class="container_subpagina" id="batata" onclick="ocultar1()">
+          <div class="pagina1_sub">
+            <div class="content_cerrar">
+              <div class="cerrar">
+                <button>X</button>
+              </div>
+            </div>
+            <div class="portafolio-text">
+              <h3>Batatabit</h3>
+            </div>
+            <div class="pagina1_sub-contenedor">
+              <figure class="bat">
+                <img src="./img/Bitcoin.svg" alt="">
+              </figure>
+              <p>Página desarrollada con tecnologías como: HTML y CSS</p>
+              <button><a href="https://peaceful-bhaskara-fd791a.netlify.app">Página</a></button>
+              <button><a
+                  href="https://github.com/jhpenag95/Mobile-First/tree/main/Mobile-First">Repositorio</a></button>
+            </div>
+          </div>
+        </div>
+
+        <!--FIn-Batatabit-->
+
+        <!--Gym-->
+        <div class="grid-item">
+          <figure>
+            <img src="./img/bg-priorities.jpg" alt="">
+            <div class="capa" onclick="mostrar2()">
+              <i><a href="#gym"><img src="./img/Icons/mas3.png" alt=""></a></i>
+            </div>
+          </figure>
+          <div class="portafolio-text">
+            <h3>Fitness-Gym</h3>
+          </div>
+        </div>
+        <div class="container_subpagina" id="gym" onclick="ocultar2()">
+          <div class="pagina1_sub">
+            <div class="content_cerrar">
+              <div class="cerrar">
+                <button>X</button>
+              </div>
+            </div>
+            <div class="portafolio-text">
+              <h3>Fitness-Gym</h3>
+            </div>
+            <div class="pagina1_sub-contenedor">
+              <figure class="figure-gym">
+                <img src="./img/bg-priorities.jpg" alt="">
+              </figure>
+              <p>Página desarrollada con tecnologías como: HTML y CSS</p>
+              <button><a href="https://zealous-leakey-aad225.netlify.app">Página</a></button>
+              <button><a href="https://github.com/jhpenag95/Gym/tree/main/Gym">Repositorio</a></button>
+            </div>
+          </div>
+        </div>
+
+        <!--Fin-Gym-->
+
+        <!--Port-1-->
+        <div class="grid-item">
+          <figure>
+            <img src="./img/Port1.png" alt="">
+            <div class="capa" onclick="mostrar3()">
+              <i><a href="#prt"><img src="./img/Icons/mas3.png" alt=""></a></i>
+            </div>
+          </figure>
+          <div class="portafolio-text">
+            <h3>Portafolio</h3>
+          </div>
+        </div>
+        <div class="container_subpagina" id="prt" onclick="ocultar3()">
+          <div class="pagina1_sub">
+            <div class="content_cerrar">
+              <div class="cerrar">
+                <button>X</button>
+              </div>
+            </div>
+            <div class="portafolio-text">
+              <h3>Portafolio</h3>
+            </div>
+            <div class="pagina1_sub-contenedor">
+              <figure class="figure-port">
+                <img src="./img/Port1.png" alt="">
+              </figure>
+              <p>Página desarrollada con tecnologías como: HTML, CSS, Bootstrap y Javascript</p>
+              <button><a href="https://porta01.netlify.app">Página</a></button>
+              <button><a href="https://github.com/jhpenag95/Portafio/tree/main/Proyect">Repositorio</a></button>
+            </div>
+          </div>
+        </div>
+        <!--Fin-Port-1-->
+        <!--Google-->
+        <div class="grid-item">
+          <figure>
+            <img src="./img/Google.png" alt="">
+            <div class="capa" onclick="mostrar4()">
+              <i><a href="#google"><img src="./img/Icons/mas3.png" alt=""></a></i>
+            </div>
+          </figure>
+          <div class="portafolio-text">
+            <h3>GoogleCloner</h3>
+          </div>
+        </div>
+        <div class="container_subpagina" id="google" onclick="ocultar4()">
+          <div class="pagina1_sub">
+            <div class="content_cerrar">
+              <div class="cerrar">
+                <button>X</button>
+              </div>
+            </div>
+            <div class="portafolio-text">
+              <h3>GoogleClorer</h3>
+            </div>
+            <div class="pagina1_sub-contenedor">
+              <figure class="figure-google">
+                <img src="./img/Google.png" alt="">
+              </figure>
+              <p>Página desarrollada con tecnologías como: HTML y CSS</p>
+              <button><a href="https://gracious-kowalevski-d8566e.netlify.app">Página</a></button>
+              <button><a
+                  href="https://github.com/jhpenag95/GoogleClorer/tree/main/GoogleClorer">Repositorio</a></button>
+            </div>
+          </div>
+        </div>
+        <!--Google-->
+        <!--Port-2-->
+        <div class="grid-item">
+          <figure>
+            <img src="./img/Port2.png" alt="">
+            <div class="capa" onclick="mostrar5()">
+              <i><a href="#port2"><img src="./img/Icons/mas3.png" alt=""></a></i>
+            </div>
+          </figure>
+          <div class="portafolio-text">
+            <h3>Nuevo Portafolio</h3>
+          </div>
+        </div>
+        <div class="container_subpagina" id="port2" onclick="ocultar5()">
+          <div class="pagina1_sub">
+            <div class="content_cerrar">
+              <div class="cerrar">
+                <button>X</button>
+              </div>
+            </div>
+            <div class="portafolio-text">
+              <h3>Nuevo Portafolio</h3>
+            </div>
+            <div class="pagina1_sub-contenedor">
+              <figure class="figure-port2">
+                <img src="./img/Port2.png" alt="">
+              </figure>
+              <p>Página desarrollada con tecnologías como: HTML, CSS y Javascript</p>
+              <button><a
+                  href="https://github.com/jhpenag95/Portafolio_cv/tree/main/PortafolioHV">Repositorio</a></button>
+            </div>
+          </div>
+        </div>
+        <!--Port-2-->
+        <!--Blog-->
+        <div class="grid-item">
+          <figure>
+            <img src="./img/Cover.png" alt="">
+            <div class="capa" onclick="mostrar6()">
+              <i><a href="#blog"><img src="./img/Icons/mas3.png" alt=""></a></i>
+            </div>
+          </figure>
+          <div class="portafolio-text">
+            <h3>Blog Mundo Teh</h3>
+          </div>
+        </div>
+        <div class="container_subpagina" id="blog" onclick="ocultar6()">
+          <div class="pagina1_sub">
+            <div class="content_cerrar">
+              <div class="cerrar">
+                <button>X</button>
+              </div>
+            </div>
+            <div class="portafolio-text">
+              <h3>Blog Mundo Teh</h3>
+            </div>
+            <div class="pagina1_sub-contenedor">
+              <figure class="figure-blog">
+                <img src="./img/Cover.png" alt="">
+              </figure>
+              <p>Página desarrollada con tecnologías como: HTML y CSS</p>
+              <button><a href="https://blogmundotch.netlify.app/">Página</a></button>
+              <button><a href="https://github.com/jhpenag95/Blog-Practica">Repositorio</a></button>
+            </div>
+          </div>
+        </div>
+        <!--Port-2-->
+      </div>
+    </section>
+    <section class="Tecnologias" id="tecnologia">
+      <div class="tecnologias-tittle">
+        <h2>TECNOLOGÍAS</h2>
+      </div>
+      <div class="container-tec">
+        <div class="grid-item__tec">
+          <img src="./img/Icons/html_original.png" alt="">
+        </div>
+        <div class="grid-item__tec">
+          <img src="./img/Icons/css_original.png" alt="">
+        </div>
+        <div class="grid-item__tec">
+          <img src="./img/Icons/javascript.png" alt="">
+        </div>
+        <div class="grid-item__tec">
+          <img src="./img/Icons/bootstrap.png" alt="">
+        </div>
+        <div class="grid-item__tec">
+          <img src="./img/Icons/php.png" alt="">
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section class="contact" id="cont">
+      <h2>CONTACTAR</h2>
+      <form id="formulario" action="https://www.actionforms.io/e/r/formulario-contacto" method="POST">
+        <div class="contact-container">
+          <div class="contact-container_date">
+            <input class="emal" type="email" id="emai" placeholder="Ingrese su correo" required name="email">
+          </div>
+
+          <div class="contact-container_date">
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+          </div>
+          <button type="submit" class="btn">
+            Enviar
+          </button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="pie-pagina">
+    <div class="footer-container">
+      <div class="contacto-footer">
+        <div class="icon-cel">
+          <img src="./img/Icons/smartphoneflat_105964 (1).png" alt="">
+        </div>
+        <p>3058162244</p>
+      </div>
+      <div class="redes-sociales">
+        <h3>Redes Sociales</h3>
+        <div class="redes-sociales__container">
+          <a href="https://www.facebook.com/helverjohanp"><i class="redes-icons"><img src="./img/Icons/facebook.png"
+                alt=""></i></a>
+          <a href="https://www.instagram.com/johanpg12/?hl=es-la"><i class="redes-icons"><img
+                src="./img/Icons/instagram.png" alt=""></i></a>
+          <a href="https://twitter.com/JOHANPG12"><i class="redes-icons"><img src="./img/Icons/twitter.png"
+                alt=""></i></a>
+          <a href="https://api.whatsapp.com/send?phone=3058162244"><i class="redes-icons"><img
+                src="./img/Icons/whatsapp.png" alt=""></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="copy">
+    <div class="copy-text">
+      <p>Copyright &copy;2021 Johan-Peña</p>
+    </div>
+  </div>
+</body>
+<script src="./js/portafolio.js"></script>
+
+</html>
